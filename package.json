@@ -12,7 +12,10 @@
 	"license": "UNLICENSED",
 	"dependencies": {
 		"@remotion/cli": "^4.0.93",
+		"@remotion/paths": "^4.0.147",
+		"@remotion/shapes": "^4.0.147",
 		"@remotion/zod-types": "^4.0.93",
+		"dagre": "^0.8.5",
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0",
 		"remotion": "^4.0.93",
@@ -20,10 +23,12 @@
 	},
 	"devDependencies": {
 		"@remotion/eslint-config": "^4.0.93",
+		"@types/dagre": "^0.7.52",
 		"@types/react": "^18.0.26",
 		"@types/web": "^0.0.86",
 		"eslint": "^8.43.0",
 		"prettier": "^2.8.8",
 		"typescript": "^4.9.4"
-	}
+	},
+	"packageManager": "pnpm@8.15.7+sha512.c85cd21b6da10332156b1ca2aa79c0a61ee7ad2eb0453b88ab299289e9e8ca93e6091232b25c07cbf61f6df77128d9c849e5c9ac6e44854dbd211c49f3a67adc"
 }
