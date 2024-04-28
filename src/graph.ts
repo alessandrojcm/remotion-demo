@@ -50,16 +50,21 @@ const initialNodes = [
 	},
 	{
 		id: '5',
-		data: {label: 'node 5'},
+		data: {label: 'node 5', update: '1'},
 		position,
 	},
 	{
 		id: '6',
 		type: 'output',
-		data: {label: 'output'},
+		data: {label: 'output', update: '2'},
 		position,
 	},
-	{id: '7', type: 'output', data: {label: 'output'}, position},
+	{
+		id: '7',
+		type: 'output',
+		data: {label: 'output', update: '2'},
+		position,
+	},
 ];
 
 const initialEdges = [
