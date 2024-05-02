@@ -57,31 +57,38 @@ export const Logo: React.FC<z.infer<typeof myCompSchema2>> = ({
 	return (
 		<AbsoluteFill
 			style={{
-				transform: `scale(${scale}) rotate(${logoRotation}deg)`,
+				backgroundColor: undefined,
 			}}
 		>
-			<Arc
-				rotateProgress={rotationDevelopment}
-				progress={development}
-				rotation={30}
-				color1={color1}
-				color2={color2}
-			/>
-			<Arc
-				rotateProgress={rotationDevelopment}
-				rotation={90}
-				progress={development}
-				color1={color1}
-				color2={color2}
-			/>
-			<Arc
-				rotateProgress={rotationDevelopment}
-				rotation={-30}
-				progress={development}
-				color1={color1}
-				color2={color2}
-			/>
-			<Atom scale={rotationDevelopment} color1={color1} color2={color2} />
+			<AbsoluteFill
+				style={{
+					transform: `scale(${scale}) rotate(${logoRotation}deg)`,
+					backgroundColor: undefined,
+				}}
+			>
+				<Arc
+					rotateProgress={rotationDevelopment}
+					progress={development}
+					rotation={30}
+					color1={color1}
+					color2={color2}
+				/>
+				<Arc
+					rotateProgress={rotationDevelopment}
+					rotation={90}
+					progress={development}
+					color1={color1}
+					color2={color2}
+				/>
+				<Arc
+					rotateProgress={rotationDevelopment}
+					rotation={-30}
+					progress={development}
+					color1={color1}
+					color2={color2}
+				/>
+				<Atom scale={rotationDevelopment} color1={color1} color2={color2} />
+			</AbsoluteFill>
 		</AbsoluteFill>
 	);
 };

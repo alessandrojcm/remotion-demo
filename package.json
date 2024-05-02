@@ -4,31 +4,34 @@
 	"description": "My Remotion video",
 	"scripts": {
 		"start": "remotion studio",
-		"build": "remotion render HelloWorld out/video.mp4",
+		"build": "remotion render Tree out/video.webm",
+		"build:gif": "remotion render --codec=gif Counter out/video.gif",
 		"upgrade": "remotion upgrade",
 		"test": "eslint src --ext ts,tsx,js,jsx && tsc"
 	},
 	"repository": {},
 	"license": "UNLICENSED",
 	"dependencies": {
-		"@remotion/cli": "^4.0.93",
-		"@remotion/paths": "^4.0.147",
-		"@remotion/shapes": "^4.0.147",
-		"@remotion/zod-types": "^4.0.93",
+		"@remotion/cli": "^4.0.150",
+		"@remotion/google-fonts": "^4.0.150",
+		"@remotion/motion-blur": "^4.0.150",
+		"@remotion/paths": "^4.0.150",
+		"@remotion/shapes": "^4.0.150",
+		"@remotion/zod-types": "^4.0.150",
 		"dagre": "^0.8.5",
-		"react": "^18.0.0",
-		"react-dom": "^18.0.0",
-		"remotion": "^4.0.93",
-		"zod": "^3.21.4"
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"remotion": "^4.0.150",
+		"zod": "^3.23.5"
 	},
 	"devDependencies": {
-		"@remotion/eslint-config": "^4.0.93",
+		"@remotion/eslint-config": "^4.0.150",
 		"@types/dagre": "^0.7.52",
-		"@types/react": "^18.0.26",
+		"@types/react": "^18.3.1",
 		"@types/web": "^0.0.86",
-		"eslint": "^8.43.0",
+		"eslint": "^8.57.0",
 		"prettier": "^2.8.8",
-		"typescript": "^4.9.4"
+		"typescript": "^4.9.5"
 	},
 	"packageManager": "pnpm@8.15.7+sha512.c85cd21b6da10332156b1ca2aa79c0a61ee7ad2eb0453b88ab299289e9e8ca93e6091232b25c07cbf61f6df77128d9c849e5c9ac6e44854dbd211c49f3a67adc"
 }

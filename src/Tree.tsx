@@ -302,9 +302,8 @@ const Tree = () => {
 								const factor = spring({
 									fps,
 									frame: frame - SECOND_ANIMATION_START * 3,
-									durationInFrames: 50,
 									config: {
-										damping: 200,
+										damping: 50,
 									},
 								});
 								const scale = interpolate(factor, [0, 0.5, 1], [1, 1.5, 1], {
@@ -312,8 +311,8 @@ const Tree = () => {
 								});
 								const color = interpolateColors(
 									factor,
-									[0, 0.5, 1],
-									['black', 'red', 'black']
+									[0, 0.01, 0.25, 0.5, 0.75, 1],
+									['black', 'red', 'red', 'red', 'red', 'black']
 								);
 								return (
 									<path

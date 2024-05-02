@@ -2,6 +2,8 @@ import {Composition} from 'remotion';
 import {HelloWorld, myCompSchema} from './HelloWorld';
 import {Logo, myCompSchema2} from './HelloWorld/Logo';
 import Tree from './Tree';
+import TopDown from './TopDown';
+import Counter from './Counter';
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -44,7 +46,23 @@ export const RemotionRoot: React.FC = () => {
 			<Composition
 				id="Tree"
 				component={Tree}
-				durationInFrames={500}
+				durationInFrames={240}
+				fps={30}
+				height={1920}
+				width={1080}
+			/>
+			<Composition
+				id="TopDown"
+				component={TopDown}
+				durationInFrames={240}
+				fps={30}
+				height={1920}
+				width={1080}
+			/>
+			<Composition
+				id="Counter"
+				component={Counter}
+				durationInFrames={240}
 				fps={30}
 				height={1920}
 				width={1080}
